@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 .title {
   position: absolute;
   width: 98px;
@@ -8,4 +9,6 @@
   font-size: 20px;
   line-height: 24px;
   color: #0D062D;
+  top: 14px;
+  left: 40px;
 }
