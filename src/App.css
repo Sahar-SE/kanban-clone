@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+.logo {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
 .title {
   position: absolute;
   width: 98px;
@@ -13,8 +20,9 @@
   left: 40px;
 }
 
-.logo {
+.victors {
   position: absolute;
   top: 14px;
-  left: 13px;
+  left: 160px;
+  height: 18px;
 }
