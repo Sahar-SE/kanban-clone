@@ -66,14 +66,10 @@
   width: 113px;
   height: 19px;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: right;
   color: #0D062D;
   top: 10px;
-  right: 150px;
+  right: 140px;
 }
 
 .location {
@@ -81,13 +77,19 @@
   width: 62px;
   height: 17px;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
-  text-align: right;
-
   color: #787486;
+  top: 35px;
+  right: 140px;
+}
+
+.user-img {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  right: 75px;
+  top: 10px;
 }
