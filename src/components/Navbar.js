@@ -8,7 +8,8 @@ export default function Navbar() {
     <div className='flex'>
       <img src={logo} className='logo'/>
       <h1 className='title'>Project M.</h1>
-      <img src={victors}  className='victors'/>  
+      <img src={victors}  className='victors'/> 
+      <div className='nav-line'></div> 
     </div>
   )
 }
