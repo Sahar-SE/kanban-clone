@@ -75,3 +75,19 @@
   top: 10px;
   right: 150px;
 }
+
+.location {
+  position: absolute;
+  width: 62px;
+  height: 17px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #787486;
+}

@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className='side-line'></div>
       <input type='text' placeholder={`search something...`} className='search'/>
       <img src={navItems} className='navItems'/>
-      <h3 className='user'>Anima Agrawal</h3>
+      <h2 className='user'>Anima Agrawal</h2>
     </div>
   )
 }
