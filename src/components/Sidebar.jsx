@@ -39,9 +39,9 @@ export default function Sidebar() {
         <div className='side-hr-line'></div>
         <p className='myProjects'>MY PROJECTS</p>
         <img src={add} className='add'/>
-        <table>
+        <table className='poject-items'>
           <tr>
-            <td></td>
+            <td className='circles'></td>
             <td>Mobile App</td>
             <td>...</td>
           </tr>
