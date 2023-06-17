@@ -197,22 +197,21 @@
   position: absolute;
   width: 206px;
   height: 200px;
-  background: #5030E5;
+  background: #F5F5F5;
   border-radius: 16px;
   left: 20px;
   top: 600px;
-  opacity: 0.2;
 }
 
 .lamp {
   position: absolute;
   width: 66px;
   height: 66px;
-  background: #cfdbdb;
+  background: #F5F5F5;
   left: 90px;
   top: 570px;
   border-radius: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .lamp-bg {
@@ -221,7 +220,33 @@
   height: 33px;
   background: rgba(252, 214, 74, 0.7);
   filter: blur(17px);
-  left: 90px;
-  top: 570px;
+  left: 105px;
+  top: 580px;
 }
 
+.lamp-img {
+  position: absolute;
+  left: 105px;
+  top: 585px;
+  width: 32px;
+  height: 32px;
+}
+
+.card-title {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.card-text {
+  position: absolute;
+  left: 4px;
+  top: 70px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #787486;
+}
