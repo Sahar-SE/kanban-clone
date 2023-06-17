@@ -53,7 +53,7 @@ export default function Sidebar() {
           </tr>
 
           <tr>
-            <td></td>
+            <td><div className='circles circle1'></div></td>
             <td>Design System</td>
             <td>...</td>
           </tr>
