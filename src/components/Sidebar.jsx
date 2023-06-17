@@ -38,7 +38,32 @@ export default function Sidebar() {
         </table>
         <div className='side-hr-line'></div>
         <p className='myProjects'>MY PROJECTS</p>
-        <img src={add} />
+        <img src={add} className='add'/>
+        <table>
+          <tr>
+            <td></td>
+            <td>Mobile App</td>
+            <td>...</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>Website Redesign</td>
+            <td>...</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>Design System</td>
+            <td>...</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>Wireframes</td>
+            <td>...</td>
+          </tr>
+        </table>
       </nav>
     </div>
   )
