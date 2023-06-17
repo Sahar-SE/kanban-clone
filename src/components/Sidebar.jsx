@@ -47,19 +47,19 @@ export default function Sidebar() {
           </tr>
 
           <tr>
-            <td><div className='circles circle1'></div></td>
+            <td><div className='circles circle2'></div></td>
             <td>Website Redesign</td>
             <td>...</td>
           </tr>
 
           <tr>
-            <td><div className='circles circle1'></div></td>
+            <td><div className='circles circle3'></div></td>
             <td>Design System</td>
             <td>...</td>
           </tr>
 
           <tr>
-            <td><div className='circles circle1'></div></td>
+            <td><div className='circles circle4'></div></td>
             <td>Wireframes</td>
             <td>...</td>
           </tr>
