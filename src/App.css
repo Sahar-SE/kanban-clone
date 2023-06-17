@@ -2,7 +2,7 @@
 
 .logo {
   position: absolute;
-  top: 14px;
+  top: 20px;
   left: 13px;
 }
 
@@ -16,14 +16,14 @@
   font-size: 20px;
   line-height: 24px;
   color: #0D062D;
-  top: 14px;
+  top: 20px;
   left: 40px;
 }
 
 .victors {
   position: absolute;
-  top: 14px;
-  left: 160px;
+  top: 23px;
+  left: 200px;
   height: 18px;
 }
 
@@ -32,7 +32,7 @@
   width: 100%;
   height: 1px;
   border: 1px solid #DBDBDB;
-  top: 10%;
+  top: 65px;
 }
 
 .side-line {
@@ -40,13 +40,13 @@
   width: 1px;
   height: 100%;
   border: 1px solid #DBDBDB;
-  left: 200px;
+  left: 240px;
 }
 
 .search {
   position: absolute;
   background-color: #F5F5F5;
-  left: 250px;
+  left: 280px;
   top: 10px;
   padding: 8px;
   box-sizing: border-box; 
@@ -55,10 +55,20 @@
   border-radius: 6px; 
 }
 
+.search::placeholder {
+  padding-left: 35px;
+}
+
+.zoom {
+  position: absolute;
+  left: 290px;
+  top: 20px;
+}
+
 .navItems {
   position: absolute;
   top: 15px;
-  left: 950px;
+  right: 300px;
 }
 
 .user {
@@ -66,12 +76,117 @@
   width: 113px;
   height: 19px;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: right;
   color: #0D062D;
   top: 10px;
-  right: 150px;
+  right: 140px;
 }
+
+.location {
+  position: absolute;
+  width: 62px;
+  height: 17px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #787486;
+  top: 35px;
+  right: 140px;
+}
+
+.user-img {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  right: 75px;
+  top: 10px;
+}
+
+.victor {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
+.sideItems {
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486;
+}
+
+.side-hr-line {
+  position: absolute;
+  width: 225px;
+  height: 1px;
+  border: 1px solid #DBDBDB;
+  top: 325px;
+  left: 7px;
+}
+
+.myProjects {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #787486;
+}
+
+.add {
+  position: absolute;
+  top: 350px;
+  left:200px;
+}
+
+.project-items {
+  position: absolute;
+  top: 400px;
+  left:20px;
+}
+
+.circles {
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+}
+
+.circle1 {
+  background-color:chartreuse;
+}
+
+.circle2 {
+  background-color:chocolate;
+}
+
+.circle3 {
+  background-color:#787486;
+}
+
+.circle4 {
+  background-color:aqua;
+}
+
+.dotHidden {
+  display: none;
+}
+
+/* .dotHidden:hover {
+  display: block;
+} */
+
+.project-items tr:hover {
+  background-color: #c1c0c2;
+  padding: 10px;
+  border-radius: 8px;
+  color: #0D062D;
+}
+
