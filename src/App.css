@@ -146,3 +146,10 @@
   top: 350px;
   left:200px;
 }
+
+.circles {
+  border-radius: 100%;
+  width: 4px;
+  height: 4px;
+  background-color:chartreuse;
+}
