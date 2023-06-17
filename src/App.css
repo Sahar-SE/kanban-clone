@@ -155,7 +155,10 @@
 
 .circles {
   border-radius: 100%;
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
+}
+
+.circle1 {
   background-color:chartreuse;
 }

@@ -41,13 +41,13 @@ export default function Sidebar() {
         <img src={add} className='add'/>
         <table className='project-items'>
           <tr>
-            <td><div className='circles'></div></td>
+            <td><div className='circles circle1'></div></td>
             <td>Mobile App</td>
             <td>...</td>
           </tr>
 
           <tr>
-            <td></td>
+            <td><div className='circles circle1'></div></td>
             <td>Website Redesign</td>
             <td>...</td>
           </tr>
