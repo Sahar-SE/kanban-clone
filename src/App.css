@@ -200,7 +200,28 @@
   background: #5030E5;
   border-radius: 16px;
   left: 20px;
-  top: 650px;
+  top: 600px;
   opacity: 0.2;
+}
+
+.lamp {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background: #cfdbdb;
+  left: 90px;
+  top: 570px;
+  border-radius: 100%;
+  opacity: 0.6;
+}
+
+.lamp-bg {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background: rgba(252, 214, 74, 0.7);
+  filter: blur(17px);
+  left: 90px;
+  top: 570px;
 }
 
