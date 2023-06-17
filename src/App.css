@@ -190,3 +190,11 @@
   color: #0D062D;
 }
 
+.header {
+  position: absolute;
+  left: 400px;
+  top: 100px;
+}
+
+
+
