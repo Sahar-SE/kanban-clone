@@ -6,6 +6,7 @@ export default function Sidebar() {
       <nav>
         <ul>
           <li><img src={home}/>Home</li>
+          <li><img src={message} />Messages</li>
         </ul>
       </nav>
     </div>
