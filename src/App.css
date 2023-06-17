@@ -129,3 +129,20 @@
   top: 325px;
   left: 7px;
 }
+
+.myProjects {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #787486;
+}
+
+.add {
+  position: absolute;
+  top: 350px;
+  left:200px;
+}

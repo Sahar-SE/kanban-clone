@@ -37,7 +37,7 @@ export default function Sidebar() {
           </tr>
         </table>
         <div className='side-hr-line'></div>
-        <p>MY PROJECTS</p>
+        <p className='myProjects'>MY PROJECTS</p>
         <img src={add} />
       </nav>
     </div>
