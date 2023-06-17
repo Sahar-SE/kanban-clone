@@ -1,4 +1,6 @@
 import React from 'react'
+import home from '../img/home.png'
+import message from '../img/message.png'
 
 export default function Sidebar() {
   return (
