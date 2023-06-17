@@ -59,7 +59,7 @@ export default function Sidebar() {
           </tr>
 
           <tr>
-            <td></td>
+            <td><div className='circles circle1'></div></td>
             <td>Wireframes</td>
             <td>...</td>
           </tr>
