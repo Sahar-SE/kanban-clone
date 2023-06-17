@@ -150,7 +150,7 @@
 .project-items {
   position: absolute;
   top: 400px;
-  left:30px;
+  left:20px;
 }
 
 .circles {
@@ -174,3 +174,19 @@
 .circle4 {
   background-color:aqua;
 }
+
+.dotHidden {
+  display: none;
+}
+
+/* .dotHidden:hover {
+  display: block;
+} */
+
+.project-items tr:hover {
+  background-color: #c1c0c2;
+  padding: 10px;
+  border-radius: 8px;
+  color: #0D062D;
+}
+
