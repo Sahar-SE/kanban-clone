@@ -17,6 +17,21 @@ export default function Sidebar() {
             <td className='p-2'>Messages</td>
           </tr>
 
+          <tr>
+            <td className='p-2'><img src={task} /></td>
+            <td className='p-2'>Messages</td>
+          </tr>
+
+          <tr>
+            <td className='p-2'><img src={member} /></td>
+            <td className='p-2'>Messages</td>
+          </tr>
+
+          <tr>
+            <td className='p-2'><img src={setting} /></td>
+            <td className='p-2'>Messages</td>
+          </tr>
+
         </table>
       </nav>
     </div>
