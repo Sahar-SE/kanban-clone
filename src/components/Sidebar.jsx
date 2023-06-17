@@ -65,6 +65,9 @@ export default function Sidebar() {
             <td className='p-2'>...</td>
           </tr>
         </table>
+        <div className='side-card'>
+
+        </div>
       </nav>
     </div>
   )
