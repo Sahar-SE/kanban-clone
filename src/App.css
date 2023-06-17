@@ -158,6 +158,10 @@
   color: #787486;
 }
 
+.project-items tr {
+  padding: 50px;
+}
+
 .circles {
   border-radius: 100%;
   width: 8px;
@@ -192,17 +196,6 @@
 
 .dotHidden {
   display: none;
-}
-
-/* .dotHidden:hover {
-  display: block;
-} */
-
-.project-items tr:hover {
-  background-color: #c1c0c2;
-  padding: 10px;
-  border-radius: 8px;
-  color: #0D062D;
 }
 
 .header {
