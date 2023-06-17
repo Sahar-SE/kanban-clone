@@ -34,8 +34,8 @@ export default function Sidebar() {
             <td className='p-2'><img src={setting} /></td>
             <td className='p-2'>Settings</td>
           </tr>
-
         </table>
+        <div className='side-hr-line'></div>
       </nav>
     </div>
   )

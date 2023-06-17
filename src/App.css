@@ -112,6 +112,14 @@
 
 .sideItems {
   position: absolute;
-  left: 50px;
-  top: 30px;
+  left: 30px;
+  top: 100px;
+}
+
+.side-hr-line {
+  position: absolute;
+  width: 10%;
+  height: 1px;
+  border: 1px solid #DBDBDB;
+  top: 600px;
 }
