@@ -151,6 +151,11 @@
   position: absolute;
   top: 400px;
   left:20px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486;
 }
 
 .circles {
@@ -160,19 +165,29 @@
 }
 
 .circle1 {
-  background-color:chartreuse;
+  background-color:#7AC555;
 }
 
 .circle2 {
-  background-color:chocolate;
+  background-color:#FFA500;
 }
 
 .circle3 {
-  background-color:#787486;
+  background-color:#E4CCFD;
 }
 
 .circle4 {
-  background-color:aqua;
+  background: #76A5EA;
+}
+
+.active {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D062D;
+  background: rgba(80, 48, 229, 0.08);
+  border-radius: 6px;
 }
 
 .dotHidden {

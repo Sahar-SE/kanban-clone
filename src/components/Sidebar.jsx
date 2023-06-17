@@ -41,7 +41,7 @@ export default function Sidebar() {
           <img src={add} className='add'/>
 
         <table className='project-items'>
-          <tr>
+          <tr className='active'>
             <td className='p-2'><div className='circles circle1'></div></td>
             <td className='p-2'>Mobile App</td>
             <td className='p-2'>...</td>
@@ -50,7 +50,7 @@ export default function Sidebar() {
           <tr>
             <td className='p-2'><div className='circles circle2'></div></td>
             <td className='p-2'>Website Redesign</td>
-            <td className='p-2'>...</td>
+            <td className='p-2 dotHidden'>...</td>
           </tr>
 
           <tr>
@@ -62,7 +62,7 @@ export default function Sidebar() {
           <tr>
             <td className='p-2'><div className='circles circle4'></div></td>
             <td className='p-2'>Wireframes</td>
-            <td className='p-2'>...</td>
+            <td className='p-2 dotHidden'>...</td>
           </tr>
         </table>
       </nav>
