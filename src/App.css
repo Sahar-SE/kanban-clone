@@ -147,6 +147,12 @@
   left:200px;
 }
 
+.project-items {
+  position: absolute;
+  top: 400px;
+  left:30px;
+}
+
 .circles {
   border-radius: 100%;
   width: 4px;
