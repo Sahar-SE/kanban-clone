@@ -6,10 +6,18 @@ export default function Sidebar() {
   return (
     <div>
       <nav>
-        <ul>
-          <li><img src={home}/>Home</li>
-          <li><img src={message} />Messages</li>
-        </ul>
+        <table className='sideItems'>
+          <tr>
+            <td className='p-2'><img src={home} className=''/></td>
+            <td className='p-2'>Home</td>
+          </tr>
+
+          <tr>
+            <td className='p-2'><img src={message} /></td>
+            <td className='p-2'>Messages</td>
+          </tr>
+
+        </table>
       </nav>
     </div>
   )
