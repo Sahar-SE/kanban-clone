@@ -37,31 +37,32 @@ export default function Sidebar() {
           </tr>
         </table>
         <div className='side-hr-line'></div>
-        <p className='myProjects'>MY PROJECTS</p>
-        <img src={add} className='add'/>
+          <p className='myProjects'>MY PROJECTS</p>
+          <img src={add} className='add'/>
+
         <table className='project-items'>
           <tr>
-            <td><div className='circles circle1'></div></td>
-            <td>Mobile App</td>
-            <td>...</td>
+            <td className='p-2'><div className='circles circle1'></div></td>
+            <td className='p-2'>Mobile App</td>
+            <td className='p-2'>...</td>
           </tr>
 
           <tr>
-            <td><div className='circles circle2'></div></td>
-            <td>Website Redesign</td>
-            <td>...</td>
+            <td className='p-2'><div className='circles circle2'></div></td>
+            <td className='p-2'>Website Redesign</td>
+            <td className='p-2'>...</td>
           </tr>
 
           <tr>
-            <td><div className='circles circle3'></div></td>
-            <td>Design System</td>
-            <td>...</td>
+            <td className='p-2'><div className='circles circle3'></div></td>
+            <td className='p-2'>Design System</td>
+            <td className='p-2'>...</td>
           </tr>
 
           <tr>
-            <td><div className='circles circle4'></div></td>
-            <td>Wireframes</td>
-            <td>...</td>
+            <td className='p-2'><div className='circles circle4'></div></td>
+            <td className='p-2'>Wireframes</td>
+            <td className='p-2'>...</td>
           </tr>
         </table>
       </nav>
