@@ -118,8 +118,9 @@
 
 .side-hr-line {
   position: absolute;
-  width: 10%;
+  width: 225px;
   height: 1px;
   border: 1px solid #DBDBDB;
-  top: 600px;
+  top: 325px;
+  left: 7px;
 }
