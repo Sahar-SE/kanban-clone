@@ -4,6 +4,7 @@ import message from '../img/message.png'
 import task from '../img/message.png'
 import member from '../img/profile-2user.png'
 import setting from '../img/setting-2.png'
+import add from '../img/add-square.png'
 
 export default function Sidebar() {
   return (
@@ -36,6 +37,8 @@ export default function Sidebar() {
           </tr>
         </table>
         <div className='side-hr-line'></div>
+        <p>MY PROJECTS</p>
+        <img src={add} />
       </nav>
     </div>
   )
