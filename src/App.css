@@ -23,7 +23,7 @@
 .victors {
   position: absolute;
   top: 23px;
-  left: 163px;
+  left: 200px;
   height: 18px;
 }
 
@@ -40,13 +40,13 @@
   width: 1px;
   height: 100%;
   border: 1px solid #DBDBDB;
-  left: 200px;
+  left: 240px;
 }
 
 .search {
   position: absolute;
   background-color: #F5F5F5;
-  left: 250px;
+  left: 280px;
   top: 10px;
   padding: 8px;
   box-sizing: border-box; 
@@ -61,14 +61,14 @@
 
 .zoom {
   position: absolute;
-  left: 260px;
+  left: 290px;
   top: 20px;
 }
 
 .navItems {
   position: absolute;
   top: 15px;
-  left: 950px;
+  right: 300px;
 }
 
 .user {
