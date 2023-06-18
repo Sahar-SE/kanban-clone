@@ -357,11 +357,24 @@
 
 .t-btn {
   position: absolute;
-  left: 360px;
+  left: 420px;
   top: 190px;
   box-sizing: border-box;
   width: 122px;
   height: 40px;
   border: 1px solid #787486;
   border-radius: 6px;
+}
+
+.btn-txt {
+  position: absolute;
+  width: 39px;
+  height: 19px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #787486;
 }
