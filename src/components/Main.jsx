@@ -19,7 +19,7 @@ export default function main() {
   return (
     <div>
       <h1 className='header'>Mobile App</h1>
-      
+
       <div className='rectangle rec-edit'>
         <img src={edit} alt='edit' className='absolute left-1 top-1 right-1 bottom-1'/>
       </div>
@@ -59,6 +59,8 @@ export default function main() {
         <img src={pause} alt='pause' className='absolute left-2 top-2 w-6 h-6'/>
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
+
+      <div className='kanban'></div>
     </div>
   )
 }
