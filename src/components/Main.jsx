@@ -26,6 +26,7 @@ export default function main() {
       <img src={user2} alt='user' className='users user2'/>
       <img src={user3} alt='user' className='users user3'/>
       <img src={user4} alt='user' className='users user4'/>
+      <div className='more'></div>
 
 
 
