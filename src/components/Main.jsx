@@ -29,8 +29,14 @@ export default function main() {
       <div className='more'>
         <p className='absolute left-1 top-1 '>+2</p>
       </div>
-      <button className='f-btn btn-txt'><img src={filter} alt='filter' className='filter'/>Filter</button>
-      <button className='t-btn btn-txt'><img src={calender} alt='calender' className='calender'/>Today</button>
+      <button className='f-btn btn-txt'>
+        <img src={filter} alt='filter' className='filter'/>
+        <p className='absolute left-12 bottom-2'>Filter</p>
+      </button>
+      <button className='t-btn btn-txt'>
+        <img src={calender} alt='calender' className='calender'/>
+        <p className='absolute left-12 bottom-2'>Today</p>
+      </button>
 
 
 
