@@ -192,12 +192,11 @@
   background-color:#76A5EA;
 }
 
-
 .side-card {
   position: absolute;
   width: 206px;
   height: 200px;
-  background: #F5F5F5;
+  background: #e4e4e4;
   border-radius: 16px;
   left: 20px;
   top: 600px;
@@ -207,7 +206,7 @@
   position: absolute;
   width: 66px;
   height: 66px;
-  background: #F5F5F5;
+  background: #e4e4e4;
   left: 90px;
   top: 570px;
   border-radius: 100%;
@@ -249,4 +248,173 @@
   line-height: 15px;
   text-align: center;
   color: #787486;
+}
+
+.header {
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: #0D062D;
+  left: 280px;
+  top: 100px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: rgba(80, 48, 229, 0.2);
+  border-radius: 8px;
+}
+
+.rec-edit {
+  left: 550px;
+  top: 120px;
+}
+
+.rec-link {
+  left: 600px;
+  top: 120px;
+}
+
+.plus {
+  position: absolute;
+  right: 320px;
+  top: 120px;
+}
+
+.invite {
+  color: #5030E5;
+  position: absolute;
+  right: 250px;
+  top: 115px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.user1 {
+  position: absolute;
+  right: 190px;
+  top: 110px;
+  width: 45px;
+  height:45px;
+}
+
+.user2 {
+  position: absolute;
+  right: 157px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}
+
+.user3 {
+  position: absolute;
+  right: 123px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}
+
+.user4 {
+  position: absolute;
+  right: 93px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}
+
+.more {
+  position: absolute;
+  right: 60px;
+  top: 110px;
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  background: #F4D7DA;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  color: #D25B68;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.h-btns {
+  position: absolute;
+  width: 122px;
+  height: 40px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #787486;
+  box-sizing: border-box;
+}
+
+.f-btn {
+  left: 280px;
+  top: 190px;
+}
+
+.t-btn {
+  left: 420px;
+  top: 190px;
+}
+
+.share-btn {
+  right: 180px;
+  top: 185px;
+}
+
+.pause {
+  position: absolute;
+  right: 110px;
+  top: 185px;
+  width: 40px;
+  height: 40px;
+  background: #5030E5;
+  border-radius: 6px;
+}
+
+.kanban {
+  position: absolute;
+  width: 354px;
+  height: 625px;
+  background: #F5F5F5;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.to-do {
+  left: 280px;
+  top: 280px;
+}
+
+.progres {
+  left: 680px;
+  top: 280px;
+}
+
+.done {
+  left: 1080px;
+  top: 280px;
+}
+
+.cards {
+  position: absolute;
+  width: 314px;
+  height: 177px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.card1 {
+  left: 20px;
+  top: 100px; 
 }
