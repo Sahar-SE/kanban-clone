@@ -296,3 +296,35 @@
   font-weight: 500;
   font-size: 20px;
 }
+
+.user1 {
+  position: absolute;
+  right: 320px;
+  top: 110px;
+  width: 45px;
+  height:45px;
+}
+
+.user2 {
+  position: absolute;
+  right: 290px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}
+
+.user3 {
+  position: absolute;
+  right: 260px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}
+
+.user4 {
+  position: absolute;
+  right: 230px;
+  top: 110px;
+  width: 45px;
+  height: 45px;
+}

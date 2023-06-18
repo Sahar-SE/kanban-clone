@@ -4,7 +4,7 @@ import edit from '../img/edit.png'
 import link from '../img/link.png'
 import plus from '../img/plus.png'
 import user1 from '../img/Ellipse 12.png'
-import user2 from '../img/Ellipse 13.png'
+import user2 from '../img/Ellipse 14.png'
 import user3 from '../img/Ellipse 13.png'
 import user4 from '../img/Ellipse 15.png'
 
