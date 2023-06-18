@@ -283,14 +283,14 @@
 
 .plus {
   position: absolute;
-  right: 430px;
+  right: 320px;
   top: 120px;
 }
 
 .invite {
   color: #5030E5;
   position: absolute;
-  right: 370px;
+  right: 250px;
   top: 115px;
   font-family: 'Inter';
   font-weight: 500;
@@ -299,7 +299,7 @@
 
 .user1 {
   position: absolute;
-  right: 320px;
+  right: 190px;
   top: 110px;
   width: 45px;
   height:45px;
@@ -307,7 +307,7 @@
 
 .user2 {
   position: absolute;
-  right: 290px;
+  right: 160px;
   top: 110px;
   width: 45px;
   height: 45px;
@@ -315,7 +315,7 @@
 
 .user3 {
   position: absolute;
-  right: 260px;
+  right: 130px;
   top: 110px;
   width: 45px;
   height: 45px;
@@ -323,8 +323,20 @@
 
 .user4 {
   position: absolute;
-  right: 230px;
+  right: 100px;
   top: 110px;
   width: 45px;
   height: 45px;
+}
+
+.more {
+  position: absolute;
+  right: 70px;
+  top: 110px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background: #F4D7DA;
+  border: 1px solid #FFFFFF;
 }
