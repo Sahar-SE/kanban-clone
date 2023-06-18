@@ -405,3 +405,16 @@
   left: 1080px;
   top: 280px;
 }
+
+.cards {
+  position: absolute;
+  width: 314px;
+  height: 177px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.card1 {
+  left: 15px;
+  top: 60px; 
+}

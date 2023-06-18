@@ -60,7 +60,9 @@ export default function main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <div className='kanban to-do'></div>
+      <div className='kanban to-do'>
+        <div className='cards'></div>
+      </div>
       <div className='kanban progres'></div>
       <div className='kanban done'></div>
     </div>
