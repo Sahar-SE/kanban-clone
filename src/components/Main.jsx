@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 import {DragDropContext, Droppable, Draggable} from "react-beautiful-dnd"
 import edit from '../img/edit.png'
@@ -13,10 +13,37 @@ import calender from '../img/calendar.png'
 import share from '../img/profile-2user.png'
 import pause from '../img/pause.png'
 import menu from '../img/menu.png'
+import Columns from './Columns'
 
 
 
-export default function main() {
+export default function Main() {
+  const [incompleted, setIncompleted] = useState([])
+  const [progress, setProgress] = useState([])
+  const [completed, setCompleted] = useState([])
+
+  const handleDragEnd = (result) => {
+    const {distination, source, draggableId} = result;
+    if(source.droppableId == distination.droppableId) return;
+
+    if(source.droppableId == 2) {
+      setProgress(removeItemById(draggableId, progress))
+    }
+    if (source.droppableId == 3) {
+      setCompleted(removeItemById(draggableId, completed))
+    } else {
+      setIncompleted(removeItemById(draggableId, Incompleted)) 
+    }
+  }
+
+  // Get Item
+
+  const task = findItemById(draggableId, [...incompleted, ...progress, ...completed]);
+
+  // Add Item
+
+  
+
   return (
     <div>
       <h1 className='header'>Mobile App</h1>
@@ -61,23 +88,22 @@ export default function main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <Droppable>
-        <div className='kanban to-do'>
-          <DragDropContext onDragEnd={() => {
-            console.log("drag drp event occured");
-          }}>
-          <div className='cards card1'></div>
-          </DragDropContext>
-        </div>
-      </Droppable>
+      <DragDropContext onDragEnd={handleDragEnd}>
 
-      <Droppable droppableId='ROOT' type='group'>
-        <div className='kanban progres'></div>
-      </Droppable>
+          <Columns task={incompleted} id={1}/>
 
-      <Droppable>
+        </DragDropContext>
+
+      {/* <Droppable> */}
+        
+          <div className='kanban progres'></div>
+       
+        
+      {/* </Droppable> */}
+
+      {/* <Droppable> */}
         <div className='kanban done'></div>
-      </Droppable>
+      {/* </Droppable> */}
     </div>
   )
 }
