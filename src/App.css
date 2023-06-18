@@ -307,7 +307,7 @@
 
 .user2 {
   position: absolute;
-  right: 160px;
+  right: 157px;
   top: 110px;
   width: 45px;
   height: 45px;
@@ -315,7 +315,7 @@
 
 .user3 {
   position: absolute;
-  right: 130px;
+  right: 123px;
   top: 110px;
   width: 45px;
   height: 45px;
@@ -323,7 +323,7 @@
 
 .user4 {
   position: absolute;
-  right: 100px;
+  right: 93px;
   top: 110px;
   width: 45px;
   height: 45px;
@@ -331,12 +331,12 @@
 
 .more {
   position: absolute;
-  right: 70px;
+  right: 60px;
   top: 110px;
   box-sizing: border-box;
-  position: absolute;
-  width: 38px;
-  height: 38px;
+  width: 45px;
+  height: 45px;
   background: #F4D7DA;
   border: 1px solid #FFFFFF;
+  border-radius: 100%;
 }
