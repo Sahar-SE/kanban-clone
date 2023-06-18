@@ -10,6 +10,10 @@ import user4 from '../img/Ellipse 15.png'
 import filter from '../img/filter.png'
 import calender from '../img/calendar.png'
 import share from '../img/profile-2user.png'
+import pause from '../img/pause.png'
+import menu from '../img/menu.png'
+
+
 
 export default function main() {
   return (
@@ -42,7 +46,10 @@ export default function main() {
         <img src={share} alt='share' className='absolute left-6 bottom-2 w-4 h-4'/>
         <p className='absolute left-12 bottom-2'>Share</p>
       </button>
-      <div className='equal'></div>
+      <div className='pause'>
+        <img src={pause} alt='pause' className='absolute left-2 top-2 w-6 h-6'/>
+      </div>
+      <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
 
 
