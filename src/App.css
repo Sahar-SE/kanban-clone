@@ -372,3 +372,13 @@
   right: 250px;
   top: 185px;
 }
+
+.equal {
+  position: absolute;
+  right: 150px;
+  top: 185px;
+  width: 40px;
+  height: 40px;
+  background: #5030E5;
+  border-radius: 6px;
+}
