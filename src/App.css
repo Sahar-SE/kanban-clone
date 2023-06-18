@@ -265,8 +265,8 @@
 
 .rectangle {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   background: rgba(80, 48, 229, 0.2);
   border-radius: 8px;
 }
@@ -374,9 +374,4 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #787486;
-}
-
-.filter {
-  position: absolute;
-  
 }
