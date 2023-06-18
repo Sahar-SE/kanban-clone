@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import {DragDropContext, Droppable, Draggable} from "react-beautiful-dnd"
 import edit from '../img/edit.png'
 import link from '../img/link.png'
 import plus from '../img/plus.png'
@@ -60,12 +61,23 @@ export default function main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <div className='kanban to-do'>
-        <div className='cards card1'></div>
-      </div>
-      
-      <div className='kanban progres'></div>
-      <div className='kanban done'></div>
+      <Droppable>
+        <div className='kanban to-do'>
+          <DragDropContext onDragEnd={() => {
+            console.log("drag drp event occured");
+          }}>
+          <div className='cards card1'></div>
+          </DragDropContext>
+        </div>
+      </Droppable>
+
+      <Droppable droppableId='ROOT' type='group'>
+        <div className='kanban progres'></div>
+      </Droppable>
+
+      <Droppable>
+        <div className='kanban done'></div>
+      </Droppable>
     </div>
   )
 }
