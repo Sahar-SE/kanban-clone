@@ -42,6 +42,7 @@ export default function main() {
         <img src={share} alt='share' className='absolute left-6 bottom-2 w-4 h-4'/>
         <p className='absolute left-12 bottom-2'>Share</p>
       </button>
+      <div className='equal'></div>
 
 
 
