@@ -29,20 +29,36 @@ export default function Main() {
     if(source.droppableId == 2) {
       setProgress(removeItemById(draggableId, progress))
     }
-    if (source.droppableId == 3) {
+    else if (source.droppableId == 3) {
       setCompleted(removeItemById(draggableId, completed))
     } else {
-      setIncompleted(removeItemById(draggableId, Incompleted)) 
+      setIncompleted(removeItemById(draggableId, incompleted)) 
     }
-  }
 
   // Get Item
 
   const task = findItemById(draggableId, [...incompleted, ...progress, ...completed]);
 
   // Add Item
+  if(distination.droppableId == 2) {
+    setProgress([{ ...task, completed, !task.completed}, ...progress]);
+  }
+  else{
+    setIncompleted([{ ...task, completed, !task.completed}, ...incompleted]);
 
-  
+  }
+}
+
+function findItemById(id, array) {
+  return array.find((item) => item.id == id);
+}
+
+function removeItemById(id, array) {
+  return array.filter((item) => item.id != id);
+}
+
+
+
 
   return (
     <div>

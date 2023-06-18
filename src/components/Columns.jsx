@@ -1,6 +1,8 @@
 import React from 'react'
 import '../App.css'
 import {Droppable} from "react-beautiful-dnd"
+import Cards from './Cards'
+
 
 
 export default function Columns({task, id}) {
@@ -13,7 +15,7 @@ export default function Columns({task, id}) {
           ref={provided.innerRef}
           isDraggingOver={snapshot.isDraggingOver}
           >
-          <Cards />
+          <Cards task={incompleted} index={1}/>
             {provided.placeholder}
 
             
