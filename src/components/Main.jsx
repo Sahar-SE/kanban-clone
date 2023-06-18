@@ -7,8 +7,8 @@ import user1 from '../img/Ellipse 12.png'
 import user2 from '../img/Ellipse 14.png'
 import user3 from '../img/Ellipse 13.png'
 import user4 from '../img/Ellipse 15.png'
-
-
+import filter from '../img/filter.png'
+import calender from '../img/calendar.png'
 
 export default function main() {
   return (
@@ -26,7 +26,11 @@ export default function main() {
       <img src={user2} alt='user' className='users user2'/>
       <img src={user3} alt='user' className='users user3'/>
       <img src={user4} alt='user' className='users user4'/>
-      <div className='more'></div>
+      <div className='more'>
+        <p className='absolute left-1 top-1 '>+2</p>
+      </div>
+      <button className='h-btn'><img src={filter} alt='filter' className='filter'/>Filter</button>
+      <button className='h-btn'><img src={calender} alt='calender' className='calender'/>Today</button>
 
 
 
