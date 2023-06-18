@@ -344,11 +344,8 @@
   font-size: 20px;
 }
 
-.f-btn {
+.h-btns {
   position: absolute;
-  left: 280px;
-  top: 190px;
-  box-sizing: border-box;
   width: 122px;
   height: 40px;
   border: 1px solid #787486;
@@ -358,20 +355,20 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #787486;
+  box-sizing: border-box;
+}
+
+.f-btn {
+  left: 280px;
+  top: 190px;
 }
 
 .t-btn {
-  position: absolute;
   left: 420px;
   top: 190px;
-  box-sizing: border-box;
-  width: 122px;
-  height: 40px;
-  border: 1px solid #787486;
-  border-radius: 6px;
-  font-family: 'Inter';
-  font-weight: 500;
-  line-height: 19px;
-  text-transform: capitalize;
-  color: #787486;
+}
+
+.share-btn {
+  right: 250px;
+  top: 185px;
 }

@@ -9,6 +9,7 @@ import user3 from '../img/Ellipse 13.png'
 import user4 from '../img/Ellipse 15.png'
 import filter from '../img/filter.png'
 import calender from '../img/calendar.png'
+import share from '../img/profile-2user.png'
 
 export default function main() {
   return (
@@ -29,13 +30,17 @@ export default function main() {
       <div className='more'>
         <p className='absolute left-1 top-1 '>+2</p>
       </div>
-      <button className='f-btn btn-txt'>
+      <button className='h-btns f-btn'>
         <img src={filter} alt='filter' className='absolute left-6 bottom-2'/>
         <p className='absolute left-12 bottom-2'>Filter</p>
       </button>
-      <button className='t-btn btn-txt'>
+      <button className='h-btns t-btn'>
         <img src={calender} alt='calender' className='absolute left-6 bottom-2'/>
         <p className='absolute left-12 bottom-2'>Today</p>
+      </button>
+      <button className='h-btns share-btn'>
+        <img src={share} alt='share' className='absolute left-6 bottom-2'/>
+        <p className='absolute left-12 bottom-2'>Share</p>
       </button>
 
 
