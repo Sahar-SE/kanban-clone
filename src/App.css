@@ -343,3 +343,25 @@
   font-weight: 500;
   font-size: 20px;
 }
+
+.f-btn {
+  position: absolute;
+  left: 280px;
+  top: 190px;
+  box-sizing: border-box;
+  width: 122px;
+  height: 40px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+}
+
+.t-btn {
+  position: absolute;
+  left: 360px;
+  top: 190px;
+  box-sizing: border-box;
+  width: 122px;
+  height: 40px;
+  border: 1px solid #787486;
+  border-radius: 6px;
+}
