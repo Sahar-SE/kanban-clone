@@ -39,7 +39,7 @@ export default function main() {
         <p className='absolute left-12 bottom-2'>Today</p>
       </button>
       <button className='h-btns share-btn'>
-        <img src={share} alt='share' className='absolute left-6 bottom-2'/>
+        <img src={share} alt='share' className='absolute left-6 bottom-2 w-4 h-4'/>
         <p className='absolute left-12 bottom-2'>Share</p>
       </button>
 
