@@ -3,6 +3,12 @@ import '../App.css'
 import edit from '../img/edit.png'
 import link from '../img/link.png'
 import plus from '../img/plus.png'
+import user1 from '../img/Ellipse 12.png'
+import user2 from '../img/Ellipse 13.png'
+import user3 from '../img/Ellipse 13.png'
+import user4 from '../img/Ellipse 15.png'
+
+
 
 export default function main() {
   return (
@@ -16,6 +22,11 @@ export default function main() {
       </div>
       <img src={plus} alt='plus' className='plus'/>
       <p className='invite'>Invite</p>
+      <img src={user1} alt='user' className='users user1'/>
+      <img src={user2} alt='user' className='users user2'/>
+      <img src={user3} alt='user' className='users user3'/>
+      <img src={user4} alt='user' className='users user4'/>
+
 
 
     </div>
