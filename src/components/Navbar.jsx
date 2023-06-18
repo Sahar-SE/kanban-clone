@@ -10,18 +10,18 @@ import victor from '../img/Vector.png'
 export default function Navbar() {
   return (
     <div className='flex'>
-      <img src={logo} className='logo'/>
+      <img src={logo} alt='logo' className='logo'/>
       <h1 className='title'>Project M.</h1>
-      <img src={victors}  className='victors'/> 
+      <img src={victors} alt='pointer'  className='victors'/> 
       <div className='nav-line'></div>
       <div className='side-line'></div>
       <input type='text' placeholder={`search something...`} className='search'/>
-      <img src={zoom} className='zoom' />
-      <img src={navItems} className='navItems'/>
+      <img src={zoom} alt='zoom' className='zoom' />
+      <img src={navItems} alt='items' className='navItems'/>
       <h2 className='user'>Anima Agrawal</h2>
       <h2 className='location'>U.P, India</h2>
-      <img src={userImg} className='user-img'/>
-      <img src={victor} className='victor'/>
+      <img src={userImg} alt='user' className='user-img'/>
+      <img src={victor} alt='victor' className='victor'/>
 
     </div>
   )

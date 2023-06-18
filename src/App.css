@@ -36,7 +36,7 @@
 }
 
 .side-line {
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 100%;
   border: 1px solid #DBDBDB;
@@ -158,6 +158,18 @@
   color: #787486;
 }
 
+.active {
+  color: #0D062D;
+  width: 225px;
+  height: 39px;
+  background: rgba(80, 48, 229, 0.08);
+  border-radius: 6px;
+}
+
+.dotHidden {
+  display: none;
+}
+
 .circles {
   border-radius: 100%;
   width: 8px;
@@ -177,28 +189,110 @@
 }
 
 .circle4 {
-  background: #76A5EA;
+  background-color:#76A5EA;
 }
 
-.active {
+.side-card {
+  position: absolute;
+  width: 206px;
+  height: 200px;
+  background: #e4e4e4;
+  border-radius: 16px;
+  left: 20px;
+  top: 600px;
+}
+
+.lamp {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background: #e4e4e4;
+  left: 90px;
+  top: 570px;
+  border-radius: 100%;
+  opacity: 0.9;
+}
+
+.lamp-bg {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background: rgba(252, 214, 74, 0.7);
+  filter: blur(17px);
+  left: 105px;
+  top: 580px;
+}
+
+.lamp-img {
+  position: absolute;
+  left: 105px;
+  top: 585px;
+  width: 32px;
+  height: 32px;
+}
+
+.card-title {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.card-text {
+  position: absolute;
+  left: 4px;
+  top: 70px;
   font-family: 'Inter';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #0D062D;
-  background: rgba(80, 48, 229, 0.08);
-  border-radius: 6px;
-}
-
-.dotHidden {
-  display: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #787486;
 }
 
 .header {
   position: absolute;
-  left: 400px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: #0D062D;
+  left: 280px;
   top: 100px;
 }
 
+.rectangle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: rgba(80, 48, 229, 0.2);
+  border-radius: 8px;
+}
 
+.rec-edit {
+  left: 550px;
+  top: 120px;
+}
 
+.rec-link {
+  left: 600px;
+  top: 120px;
+}
+
+.plus {
+  position: absolute;
+  right: 430px;
+  top: 120px;
+}
+
+.invite {
+  color: #5030E5;
+  position: absolute;
+  right: 370px;
+  top: 115px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+}
