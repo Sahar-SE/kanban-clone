@@ -30,11 +30,11 @@ export default function main() {
         <p className='absolute left-1 top-1 '>+2</p>
       </div>
       <button className='f-btn btn-txt'>
-        <img src={filter} alt='filter' className='filter'/>
+        <img src={filter} alt='filter' className='absolute left-6 bottom-2'/>
         <p className='absolute left-12 bottom-2'>Filter</p>
       </button>
       <button className='t-btn btn-txt'>
-        <img src={calender} alt='calender' className='calender'/>
+        <img src={calender} alt='calender' className='absolute left-6 bottom-2'/>
         <p className='absolute left-12 bottom-2'>Today</p>
       </button>
 

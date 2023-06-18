@@ -375,3 +375,8 @@
   text-transform: capitalize;
   color: #787486;
 }
+
+.filter {
+  position: absolute;
+  
+}
