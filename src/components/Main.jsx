@@ -26,12 +26,8 @@ const itemsFromBackend = [
 
 const columnsFromBackend = {
   [uuid()]: {
-    name: "Requested",
-    items: itemsFromBackend
-  },
-  [uuid()]: {
     name: "To do",
-    items: []
+    items: itemsFromBackend
   },
   [uuid()]: {
     name: "In Progress",
