@@ -14,7 +14,7 @@ import calender from '../img/calendar.png'
 import share from '../img/profile-2user.png'
 import pause from '../img/pause.png'
 import menu from '../img/menu.png'
-import Columns from './Columns'
+
 
 const itemsFromBackend = [
   { id: uuid(), content: "First task" },
@@ -127,7 +127,7 @@ export default function Main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <div style={{ display: "flex", justifyContent: "center", height: "100%" }}>
+      <div className='kanban'>
         <DragDropContext
           onDragEnd={result => onDragEnd(result, columns, setColumns)}
         >
