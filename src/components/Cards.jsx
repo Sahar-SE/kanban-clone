@@ -23,7 +23,7 @@ export default function Cards({task, index}) {
           {...provided.dragHandleProps}
           ref={provided.innerRef}
           isDraggingOver={snapshot.isDragging}>
-            //card contents
+            {/* //card contents */}
             {provided.placeholder}
           </div>
         )}
