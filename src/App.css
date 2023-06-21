@@ -416,3 +416,11 @@
   margin-top: 8px;
   margin-left: 2px;
 }
+
+.badge {
+  width: 36px;
+  height: 23px;
+
+  background: rgba(223, 168, 116, 0.2);
+  border-radius: 4px;
+}
