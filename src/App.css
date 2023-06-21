@@ -424,3 +424,10 @@
   line-height: 19px;
   color: #0D062D;
 }
+
+.card-line {
+  width: 314px;
+  height: 0px;
+  background: #800080;
+  border: 3px solid #5030E5;
+}

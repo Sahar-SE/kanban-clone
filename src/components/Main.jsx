@@ -164,8 +164,11 @@ export default function Main() {
                             <tr>
                           <p className='m-2.5 m circles' style={column.style}></p>
                             <td className='card-space-title'><h2>{column.name}</h2></td>
+                            
                             </tr>
+                            
                           </table>
+                          <div className='card-line'></div>
                           {column.items.map((item, index) => {
                             return (<div>
                               
