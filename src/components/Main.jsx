@@ -123,7 +123,7 @@ export default function Main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <div className='kanban'>
+      <div className='flex kanban'>
         <DragDropContext
           onDragEnd={result => onDragEnd(result, columns, setColumns)}
         >
@@ -136,6 +136,7 @@ export default function Main() {
                   alignItems: "center"
                 }}
                 key={columnId}
+                
               >
                 <h2>{column.name}</h2>
                 <div style={{ margin: 8 }}>
@@ -147,12 +148,15 @@ export default function Main() {
                           ref={provided.innerRef}
                           style={{
                             background: snapshot.isDraggingOver
-                              ? "lightblue"
-                              : "lightgrey",
-                            padding: 4,
-                            width: 250,
-                            minHeight: 500
+                              ? "#F5F5F5"
+                              :"#F5F5F5",
+                              width: 330,
+                              height: 625,
+                              borderRadius: "16px 16px 0px 0px",
+                              padding: 4,
+                              minHeight: 500
                           }}
+                          
                         >
                           {column.items.map((item, index) => {
                             return (
@@ -169,13 +173,13 @@ export default function Main() {
                                       {...provided.dragHandleProps}
                                       style={{
                                         userSelect: "none",
-                                        padding: 16,
+                                        padding: 56,
                                         margin: "0 0 8px 0",
                                         minHeight: "50px",
                                         backgroundColor: snapshot.isDragging
-                                          ? "#263B4A"
-                                          : "#456C86",
-                                        color: "white",
+                                          ? "black"
+                                          : "green",
+                                        color: "blue",
                                         ...provided.draggableProps.style
                                       }}
                                     >
