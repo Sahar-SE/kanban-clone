@@ -391,21 +391,6 @@
   top: 280px;
 }
 
-.to-do {
-  left: 280px;
-  top: 280px;
-}
-
-.progres {
-  left: 680px;
-  top: 280px;
-}
-
-.done {
-  left: 1080px;
-  top: 280px;
-}
-
 .cards {
   width: 300px;
   height: 177px;
@@ -419,7 +404,7 @@
 .card-space-title {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #0D062D;
@@ -428,4 +413,6 @@
 .card-line {
   width: 314px;
   height: 0px;
+  margin-top: 8px;
+  margin-left: 2px;
 }

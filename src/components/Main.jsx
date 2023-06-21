@@ -27,17 +27,20 @@ const itemsFromBackend = [
 const columnsFromBackend = {
   [uuid()]: {
     name: "To do",
-    style: {backgroundColor: "#5030E5" },
+    circle: {backgroundColor: "#5030E5" },
+    line: {background: "#800080", border: "3px solid #5030E5"},
     items: itemsFromBackend
   },
   [uuid()]: {
     name: "In Progress",
-    style: {backgroundColor: "#FFA500" },
+    circle: {backgroundColor: "#FFA500" },
+    line: {background: "#FFA500", border: "3px solid #FFA500"},
     items: []
   },
   [uuid()]: {
     name: "Done",
-    style: {backgroundColor: "#76A5EA" },
+    circle: {backgroundColor: "#76A5EA" },
+    line: {background: "#8BC48A", border: "3px solid #8BC48A"},
     items: []
   }
 };
@@ -162,13 +165,11 @@ export default function Main() {
                         >
                           <table className='p-3 mt-4'>
                             <tr>
-                          <p className='m-2.5 m circles' style={column.style}></p>
+                          <p className='m-2.5 m circles' style={column.circle}></p>
                             <td className='card-space-title'><h2>{column.name}</h2></td>
-                            
                             </tr>
-                            
                           </table>
-                          <div className='card-line'></div>
+                          <div className='card-line' style={column.line}></div>
                           {column.items.map((item, index) => {
                             return (<div>
                               
