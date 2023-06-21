@@ -27,14 +27,17 @@ const itemsFromBackend = [
 const columnsFromBackend = {
   [uuid()]: {
     name: "To do",
+    style: {backgroundColor: "#5030E5" },
     items: itemsFromBackend
   },
   [uuid()]: {
     name: "In Progress",
+    style: {backgroundColor: "#FFA500" },
     items: []
   },
   [uuid()]: {
     name: "Done",
+    style: {backgroundColor: "#76A5EA" },
     items: []
   }
 };
@@ -135,8 +138,7 @@ export default function Main() {
                   flexDirection: "column",
                   alignItems: "center"
                 }}
-                key={columnId}
-                
+                key={columnId}  
               >
                 
                 <div style={{ margin: 8 }}>
@@ -151,14 +153,18 @@ export default function Main() {
                               ? "#F5F5F5"
                               :"#F5F5F5",
                               width: 330,
-                              height: 625,
+                              height: "auto",
                               borderRadius: "16px 16px 0px 0px",
                               padding: 4,
                               minHeight: 500
                               }}
                           
                         >
-                          <h2>{column.name}</h2>
+                          <div className='p-3 flex'>
+                          
+                            <div><p className='circles' style={column.style}></p>{column.name}</div>
+                            
+                          </div>
                           {column.items.map((item, index) => {
                             return (<div>
                               
