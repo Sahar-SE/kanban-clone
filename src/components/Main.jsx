@@ -222,7 +222,7 @@ export default function Main() {
                                       <p className='badge' style={column.badge}>{item.badge}</p>
                                       <div>
                                         <h2 className='task-title'><strong>{item.title}</strong></h2>
-                                        <p>{item.text}</p>
+                                        <p className='task-text'>{item.text}</p>
                                         <img src={user1}/>
                                         <p>{item.comments}</p>
                                         <p>{item.files}</p>
