@@ -17,11 +17,14 @@ import menu from '../img/menu.png'
 
 
 const itemsFromBackend = [
-  { id: uuid(), content: "First task" },
-  { id: uuid(), content: "Second task" },
-  { id: uuid(), content: "Third task" },
-  { id: uuid(), content: "Fourth task" },
-  { id: uuid(), content: "Fifth task" }
+  { id: uuid(), content: "Low" },
+  { id: uuid(), content: "High" },
+  { id: uuid(), content: "High" },
+];
+
+const itemsFromProgress = [
+  { id: uuid(), content: "Low" },
+  { id: uuid(), content: "Low" },
 ];
 
 const columnsFromBackend = {
@@ -35,7 +38,7 @@ const columnsFromBackend = {
     name: "In Progress",
     circle: {backgroundColor: "#FFA500" },
     line: {background: "#FFA500", border: "3px solid #FFA500"},
-    items: []
+    items: itemsFromProgress
   },
   [uuid()]: {
     name: "Done",
