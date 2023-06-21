@@ -138,7 +138,7 @@ export default function Main() {
                 key={columnId}
                 
               >
-                <h2>{column.name}</h2>
+                
                 <div style={{ margin: 8 }}>
                   <Droppable droppableId={columnId} key={columnId}>
                     {(provided, snapshot) => {
@@ -154,42 +154,46 @@ export default function Main() {
                               height: 625,
                               borderRadius: "16px 16px 0px 0px",
                               padding: 4,
-                              minHeight: 500,
-                              p
-                          }}
+                              minHeight: 500
+                              }}
                           
                         >
+                          <h2>{column.name}</h2>
                           {column.items.map((item, index) => {
-                            return (
+                            return (<div>
+                              
                               <Draggable
                                 key={item.id}
                                 draggableId={item.id}
                                 index={index}
-                              >
+                              > 
                                 {(provided, snapshot) => {
                                   return (
+                                    
                                     <div
                                       ref={provided.innerRef}
                                       {...provided.draggableProps}
                                       {...provided.dragHandleProps}
-                                      style={{
-                                        userSelect: "none",
-                                        padding: 56,
-                                        margin: "0 0 8px 0",
-                                        minHeight: "50px",
-                                        backgroundColor: snapshot.isDragging
-                                          ? "black"
-                                          : "green",
-                                        color: "blue",
-                                        ...provided.draggableProps.style
-                                      }}
+                                      // style={{
+                                      //   userSelect: "none",
+                                      //   padding: 56,
+                                      //   margin: "0 0 8px 0",
+                                      //   minHeight: "50px",
+                                      //   backgroundColor: snapshot.isDragging
+                                      //     ? "black"
+                                      //     : "green",
+                                      //   color: "blue",
+                                      //   ...provided.draggableProps.style
+                                      // }}
+                                      className='cards'
                                     >
+                                      
                                       {item.content}
                                     </div>
                                   );
                                 }}
                               </Draggable>
-                            );
+                            </div>);
                           })}
                           {provided.placeholder}
                         </div>
