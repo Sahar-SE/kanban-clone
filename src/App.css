@@ -192,6 +192,7 @@
   background-color:#76A5EA;
 }
 
+
 .side-card {
   position: absolute;
   width: 206px;
@@ -385,36 +386,40 @@
 
 .kanban {
   position: absolute;
-  width: 354px;
-  height: 625px;
-  background: #F5F5F5;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.to-do {
   left: 280px;
-  top: 280px;
-}
-
-.progres {
-  left: 680px;
-  top: 280px;
-}
-
-.done {
-  left: 1080px;
+  right: 130px;
   top: 280px;
 }
 
 .cards {
-  position: absolute;
-  width: 314px;
+  width: 300px;
   height: 177px;
   background: #FFFFFF;
   border-radius: 16px;
+  margin-top: 5%;
+  margin-left: 3.5%;
+  padding: 10px;
 }
 
-.card1 {
-  left: 20px;
-  top: 100px; 
+.card-space-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D062D;
+}
+
+.card-line {
+  width: 314px;
+  height: 0px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.badge {
+  width: 36px;
+  height: 23px;
+  border-radius: 4px;
+  padding: 2px;
 }

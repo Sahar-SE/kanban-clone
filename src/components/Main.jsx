@@ -14,32 +14,55 @@ import calender from '../img/calendar.png'
 import share from '../img/profile-2user.png'
 import pause from '../img/pause.png'
 import menu from '../img/menu.png'
+import message from '../img/message.png'
 
 
+
+const images = [
+  <img source={user1} />,<img source={user2} />,<img source={user3} />
+];
 const itemsFromBackend = [
-  { id: uuid(), content: "First task" },
-  { id: uuid(), content: "Second task" },
-  { id: uuid(), content: "Third task" },
-  { id: uuid(), content: "Fourth task" },
-  { id: uuid(), content: "Fifth task" }
+  { id: uuid(), badge: "Low",
+    title: "Brainstorming",
+    text: "Brainstorming brings team members' diverse experience into play.",
+    users: images,
+    comments: 12,
+    files: 0},
+  { id: uuid(), badge: "High", },
+  { id: uuid(), badge: "High",  },
+];
+
+const itemsFromProgress = [
+  { id: uuid(), badge: "Low" },
+  { id: uuid(), badge: "Low" },
+];
+
+const itemsFromDone = [
+  { id: uuid(), badge: "Completed" },
+  { id: uuid(), badge: "Completed" },
 ];
 
 const columnsFromBackend = {
   [uuid()]: {
-    name: "Requested",
+    name: "To do",
+    circle: {backgroundColor: "#5030E5" },
+    line: {background: "#800080", border: "3px solid #5030E5"},
+    badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
     items: itemsFromBackend
   },
   [uuid()]: {
-    name: "To do",
-    items: []
-  },
-  [uuid()]: {
     name: "In Progress",
-    items: []
+    circle: {backgroundColor: "#FFA500" },
+    line: {background: "#FFA500", border: "3px solid #FFA500"},
+    badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
+    items: itemsFromProgress
   },
   [uuid()]: {
     name: "Done",
-    items: []
+    circle: {backgroundColor: "#76A5EA" },
+    line: {background: "#8BC48A", border: "3px solid #8BC48A"},
+    badge: {background: "rgba(131, 194, 157, 0.2)", color: "#68B266", width: "85px"},
+    items: itemsFromDone
   }
 };
 
@@ -127,7 +150,7 @@ export default function Main() {
       </div>
       <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
 
-      <div className='kanban'>
+      <div className='flex kanban'>
         <DragDropContext
           onDragEnd={result => onDragEnd(result, columns, setColumns)}
         >
@@ -139,9 +162,9 @@ export default function Main() {
                   flexDirection: "column",
                   alignItems: "center"
                 }}
-                key={columnId}
+                key={columnId}  
               >
-                <h2>{column.name}</h2>
+                
                 <div style={{ margin: 8 }}>
                   <Droppable droppableId={columnId} key={columnId}>
                     {(provided, snapshot) => {
@@ -151,44 +174,64 @@ export default function Main() {
                           ref={provided.innerRef}
                           style={{
                             background: snapshot.isDraggingOver
-                              ? "lightblue"
-                              : "lightgrey",
-                            padding: 4,
-                            width: 250,
-                            minHeight: 500
-                          }}
+                              ? "#F5F5F5"
+                              :"#F5F5F5",
+                              width: 330,
+                              height: "auto",
+                              borderRadius: "16px 16px 0px 0px",
+                              padding: 4,
+                              minHeight: 500
+                              }}
+                          
                         >
+                          <table className='p-3 mt-4'>
+                            <tr>
+                          <p className='m-2.5 m circles' style={column.circle}></p>
+                            <td className='card-space-title'><h2>{column.name}</h2></td>
+                            </tr>
+                          </table>
+                          <div className='card-line' style={column.line}></div>
                           {column.items.map((item, index) => {
-                            return (
+                            return (<div>
+                              
                               <Draggable
                                 key={item.id}
                                 draggableId={item.id}
                                 index={index}
-                              >
+                              > 
                                 {(provided, snapshot) => {
                                   return (
+                                    
                                     <div
                                       ref={provided.innerRef}
                                       {...provided.draggableProps}
                                       {...provided.dragHandleProps}
-                                      style={{
-                                        userSelect: "none",
-                                        padding: 16,
-                                        margin: "0 0 8px 0",
-                                        minHeight: "50px",
-                                        backgroundColor: snapshot.isDragging
-                                          ? "#263B4A"
-                                          : "#456C86",
-                                        color: "white",
-                                        ...provided.draggableProps.style
-                                      }}
+                                      // style={{
+                                      //   userSelect: "none",
+                                      //   padding: 56,
+                                      //   margin: "0 0 8px 0",
+                                      //   minHeight: "50px",
+                                      //   backgroundColor: snapshot.isDragging
+                                      //     ? "black"
+                                      //     : "green",
+                                      //   color: "blue",
+                                      //   ...provided.draggableProps.style
+                                      // }}
+                                      className='cards'
                                     >
-                                      {item.content}
+                                      <p className='badge' style={column.badge}>{item.badge}</p>
+                                      <div>
+                                        <h2><strong>{item.title}</strong></h2>
+                                        <p>{item.text}</p>
+                                        <img src={user1}/>
+                                        <p>{item.comments}</p>
+                                        <p>{item.files}</p>
+                                      </div>
                                     </div>
                                   );
                                 }}
                               </Draggable>
-                            );
+                            </div>);
                           })}
                           {provided.placeholder}
                         </div>
