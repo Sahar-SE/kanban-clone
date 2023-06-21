@@ -27,6 +27,11 @@ const itemsFromProgress = [
   { id: uuid(), content: "Low" },
 ];
 
+const itemsFromDone = [
+  { id: uuid(), content: "Completed" },
+  { id: uuid(), content: "Completed" },
+];
+
 const columnsFromBackend = {
   [uuid()]: {
     name: "To do",
@@ -44,7 +49,7 @@ const columnsFromBackend = {
     name: "Done",
     circle: {backgroundColor: "#76A5EA" },
     line: {background: "#8BC48A", border: "3px solid #8BC48A"},
-    items: []
+    items: itemsFromDone
   }
 };
 
