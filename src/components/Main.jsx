@@ -160,11 +160,12 @@ export default function Main() {
                               }}
                           
                         >
-                          <div className='p-3 flex'>
-                          
-                            <div><p className='circles' style={column.style}></p>{column.name}</div>
-                            
-                          </div>
+                          <table className='p-3 mt-4'>
+                            <tr>
+                          <p className='m-2.5 m circles' style={column.style}></p>
+                            <td className='card-space-title'><h2>{column.name}</h2></td>
+                            </tr>
+                          </table>
                           {column.items.map((item, index) => {
                             return (<div>
                               

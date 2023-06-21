@@ -415,3 +415,12 @@
   margin-left: 3.5%;
   padding: 10px;
 }
+
+.card-space-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D062D;
+}
