@@ -154,7 +154,8 @@ export default function Main() {
                               height: 625,
                               borderRadius: "16px 16px 0px 0px",
                               padding: 4,
-                              minHeight: 500
+                              minHeight: 500,
+                              p
                           }}
                           
                         >
