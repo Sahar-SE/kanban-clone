@@ -423,3 +423,16 @@
   border-radius: 4px;
   padding: 2px;
 }
+
+.task-title {
+  color: #0D062D;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.task-text {
+  color: #787486;
+  font-size: 12px;
+  font-family: Inter;
+}
