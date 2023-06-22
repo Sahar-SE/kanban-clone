@@ -51,8 +51,6 @@ const itemsFromBackend = [
 const itemsFromProgress = [
   { id: uuid(), badge: "Low",
     background: bg1,
-    title: "Research",
-    users: images,
     comments: 10,
     files: 3},
   { id: uuid(), badge: "Low" },
@@ -241,17 +239,17 @@ export default function Main() {
                                           transform: snapshot.isDragging
                                            ? "rotate(30deg)"
                                            : "",
-                                           height: column.area,
                                         ...provided.draggableProps.style
                                       }}
-                                      className='cards'
+                                      
+                                      className="cards"
                                     >
-                                      <div style={column.area}>
+                                      
                                         <p className='badge' style={column.badge}>{item.badge}</p>
                                         <div>
                                           <h2 className='task-title'><strong>{item.title}</strong></h2>
                                           <p className='task-text'>{item.text}</p>
-                                          <img src={item.background} />
+                                          <img src={item.background}/>
                                           <div className='flex task-text'>
                                             <img src={user1} className='m-3 w-8 h-8'/>
                                             <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
@@ -259,7 +257,7 @@ export default function Main() {
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
+                                  
                                   );
                                 }}
                               </Draggable>
