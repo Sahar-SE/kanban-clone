@@ -281,7 +281,7 @@ export default function Main() {
                                           <div className='flex task-text'>
                                             <img src={user1} className='m-3 w-8 h-8'/>
                                             <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
-                                            <p className='flex m-4 '><img src={files} className='w-5 h-5'/><p className='pl-1'>{item.files}</p></p>
+                                            <p className='flex m-4'><img src={files} className='w-5 h-5'/><p className='pl-1'>{item.files}</p></p>
                                           </div>
                                         </div>
                                       </div>

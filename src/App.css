@@ -68,8 +68,7 @@
 .navItems {
   position: absolute;
   top: 15px;
-  /* right: 300px; */
-  left: 1000px;
+  right: 300px;
 }
 
 .user {
@@ -80,7 +79,7 @@
   font-weight: 400;
   color: #0D062D;
   top: 10px;
-  left: 1185px;
+  right: 140px;
 }
 
 .location {
