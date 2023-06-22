@@ -460,6 +460,11 @@
     top: 19px
   }
 
+  .nav-line {
+    position: fixed;
+    width: 100%;
+  }
+
   .user {
     left: 275px;
   }
