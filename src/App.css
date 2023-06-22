@@ -556,3 +556,23 @@
 .more {
   top: 180px;
 }
+
+.f-btn {
+  left: 100px;
+  top: 240px;
+}
+
+.t-btn {
+  left: 230px;
+  top: 240px;
+}
+
+.share-btn {
+  left:360px;
+  top: 240px;
+}
+
+.pause {
+  top: 182px;
+  right: 17px;
+}
