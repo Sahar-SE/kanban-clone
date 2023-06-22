@@ -200,7 +200,7 @@ export default function Main() {
                               ? "#F5F5F5"
                               :"#F5F5F5",
                               width: 330,
-                              height: "auto",
+                              height: 800,
                               borderRadius: "16px 16px 0px 0px",
                               padding: 4,
                               minHeight: 500
