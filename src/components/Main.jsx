@@ -34,20 +34,26 @@ const itemsFromBackend = [
   { id: uuid(), badge: "Low",
     title: "Brainstorming",
     text: "Brainstorming brings team members' diverse experience into play.",
-    users: images,
+    user1: user1,
+    user2: user2,
+    user3: user3,
     comments: 12,
     files: 0},
 
   { id: uuid(), badge: "High",
     title: "Research",
     text: "User research helps you to create an optimal product for users.",
-    users: images,
+    user1: user4,
+    user2: user2,
     comments: 10,
     files: 3},
 
   { id: uuid(), badge: "High",
     title: "Wireframes",
     text: "Low fidelity wireframes include the most basic content and visuals.",
+    user1: user1,
+    user2: user2,
+    user3: user3,
     comments: 17,
     files: 2},
 ];
@@ -56,6 +62,9 @@ const itemsFromProgress = [
   { id: uuid(), badge: "Low",
     background: bg1,
     title:"Onboarding Illustrations",
+    user1: user1,
+    user2: user2,
+    user3: user3,
     comments: 10,
     style: {height: "80px"},
     files: 3},
@@ -64,6 +73,7 @@ const itemsFromProgress = [
     title: "Moodboard",
     background: bg2,
     background2: bg3,
+    user1: user4,
     style: { margin:"4px", gap: 2},
     comments: 17,
     files: 2 },
@@ -74,11 +84,16 @@ const itemsFromDone = [
     title: "Mobile App Design",
     background: bg4,
     style: {height: "100px", marginLeft: "60px"},
+    user1: user1,
+    user2: user2,
     comments: 17,
     files: 2 },
   { id: uuid(), badge: "Completed",
     title: "Design System",
     text: "It just needs to adapt the UI from what you did before",
+    user1: user1,
+    user2: user2,
+    user3: user3,
     comments: 17,
     files: 2
    },
@@ -278,9 +293,12 @@ export default function Main() {
 
                                           </div>
                                           
-                                          <div className='flex task-text'>
-                                            <img src={user1} className='m-3 w-8 h-8'/>
-                                            <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
+                                          <div className='flex task-text mt-1'>
+                                            <img src={item.user1} className='border-0 h-8'/>
+                                            <img src={item.user2} className='border-0 h-8'/>
+                                            <img src={item.user3} className='border-0 h-8'/>
+
+                                            <p className='flex m-4 ml-28'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
                                             <p className='flex m-4'><img src={files} className='w-5 h-5'/><p className='pl-1'>{item.files}</p></p>
                                           </div>
                                         </div>
