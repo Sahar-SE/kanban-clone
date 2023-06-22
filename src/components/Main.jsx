@@ -5,6 +5,7 @@ import {v4 as uuid } from "uuid";
 import edit from '../img/edit.png'
 import link from '../img/link.png'
 import plus from '../img/plus.png'
+import down from '../img/downArrow.png'
 import user1 from '../img/Ellipse 12.png'
 import user2 from '../img/Ellipse 14.png'
 import user3 from '../img/Ellipse 13.png'
@@ -15,6 +16,8 @@ import share from '../img/profile-2user.png'
 import pause from '../img/pause.png'
 import menu from '../img/menu.png'
 import message from '../img/message.png'
+import files from '../img/files.png'
+
 
 
 
@@ -28,8 +31,20 @@ const itemsFromBackend = [
     users: images,
     comments: 12,
     files: 0},
-  { id: uuid(), badge: "High", },
-  { id: uuid(), badge: "High",  },
+
+  { id: uuid(), badge: "High",
+    title: "Research",
+    text: "User research helps you to create an optimal product for users.",
+    users: images,
+    comments: 10,
+    files: 3},
+
+  { id: uuid(), badge: "High",
+    title: "Wireframes",
+    text: "Low fidelity wireframes include the most basic content and visuals.",
+    users: images,
+    comments: 17,
+    files: 2},
 ];
 
 const itemsFromProgress = [
@@ -48,6 +63,7 @@ const columnsFromBackend = {
     circle: {backgroundColor: "#5030E5" },
     line: {background: "#800080", border: "3px solid #5030E5"},
     badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
+    add: plus,
     items: itemsFromBackend
   },
   [uuid()]: {
@@ -133,6 +149,7 @@ export default function Main() {
       <button className='h-btns f-btn'>
         <img src={filter} alt='filter' className='absolute left-6 bottom-2'/>
         <p className='absolute left-12 bottom-2'>Filter</p>
+        <img src={down} alt='arrow' className='absolute left-24' />
       </button>
 
       <button className='h-btns t-btn'>
@@ -188,6 +205,7 @@ export default function Main() {
                             <tr>
                           <p className='m-2.5 m circles' style={column.circle}></p>
                             <td className='card-space-title'><h2>{column.name}</h2></td>
+                            <img src={column.add} className='absolute left-72 top-6'/>
                             </tr>
                           </table>
                           <div className='card-line' style={column.line}></div>
@@ -223,9 +241,11 @@ export default function Main() {
                                       <div>
                                         <h2 className='task-title'><strong>{item.title}</strong></h2>
                                         <p className='task-text'>{item.text}</p>
-                                        <img src={user1}/>
-                                        <p>{item.comments}</p>
-                                        <p>{item.files}</p>
+                                        <div className='flex task-text'>
+                                          <img src={user1} className='m-3 w-8 h-8'/>
+                                          <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
+                                          <p className='flex m-4 w-12'><img src={files}/><p className='pl-1'>{item.files}</p></p>
+                                        </div>
                                       </div>
                                     </div>
                                   );
