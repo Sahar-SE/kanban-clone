@@ -17,6 +17,7 @@ import pause from '../img/pause.png'
 import menu from '../img/menu.png'
 import message from '../img/message.png'
 import files from '../img/files.png'
+import bg1 from '../img/bg1.png'
 
 
 
@@ -48,7 +49,12 @@ const itemsFromBackend = [
 ];
 
 const itemsFromProgress = [
-  { id: uuid(), badge: "Low" },
+  { id: uuid(), badge: "Low",
+    background: bg1,
+    title: "Research",
+    users: images,
+    comments: 10,
+    files: 3},
   { id: uuid(), badge: "Low" },
 ];
 
@@ -71,6 +77,7 @@ const columnsFromBackend = {
     circle: {backgroundColor: "#FFA500" },
     line: {background: "#FFA500", border: "3px solid #FFA500"},
     badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
+    area: {height: "230px"},
     items: itemsFromProgress
   },
   [uuid()]: {
@@ -225,27 +232,31 @@ export default function Main() {
                                       ref={provided.innerRef}
                                       {...provided.draggableProps}
                                       {...provided.dragHandleProps}
-                                      // style={{
-                                      //   userSelect: "none",
-                                      //   padding: 56,
-                                      //   margin: "0 0 8px 0",
-                                      //   minHeight: "50px",
-                                      //   backgroundColor: snapshot.isDragging
-                                      //     ? "black"
-                                      //     : "green",
-                                      //   color: "blue",
-                                      //   ...provided.draggableProps.style
-                                      // }}
+                                      style={{
+                                        userSelect: "none",
+                                        minHeight: "50px",
+                                        background: snapshot.isDragging
+                                          ? "#FFFFFF"
+                                          : "",
+                                          transform: snapshot.isDragging
+                                           ? "rotate(30deg)"
+                                           : "",
+                                           height: column.area,
+                                        ...provided.draggableProps.style
+                                      }}
                                       className='cards'
                                     >
-                                      <p className='badge' style={column.badge}>{item.badge}</p>
-                                      <div>
-                                        <h2 className='task-title'><strong>{item.title}</strong></h2>
-                                        <p className='task-text'>{item.text}</p>
-                                        <div className='flex task-text'>
-                                          <img src={user1} className='m-3 w-8 h-8'/>
-                                          <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
-                                          <p className='flex m-4 w-12'><img src={files}/><p className='pl-1'>{item.files}</p></p>
+                                      <div style={column.area}>
+                                        <p className='badge' style={column.badge}>{item.badge}</p>
+                                        <div>
+                                          <h2 className='task-title'><strong>{item.title}</strong></h2>
+                                          <p className='task-text'>{item.text}</p>
+                                          <img src={item.background} />
+                                          <div className='flex task-text'>
+                                            <img src={user1} className='m-3 w-8 h-8'/>
+                                            <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
+                                            <p className='flex m-4 w-12'><img src={files}/><p className='pl-1'>{item.files}</p></p>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
