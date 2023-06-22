@@ -438,7 +438,7 @@
 }
 
 /* Mobile Version */
-@media (min-width: 200px) and (max-width: 900px) {
+@media (min-width: 200px) and (max-width: 600px) {
   .title {
     display: none;
   }
