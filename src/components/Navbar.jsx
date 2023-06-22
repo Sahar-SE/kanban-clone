@@ -5,7 +5,7 @@ import victors from '../img/Group 639.png'
 import zoom from '../img/search-normal.png'
 import navItems from '../img/Group 640.png'
 import userImg from '../img/image 1.png'
-import victor from '../img/Vector.png'
+import victor from '../img/downArrow.png'
 
 export default function Navbar() {
   return (

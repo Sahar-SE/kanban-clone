@@ -5,6 +5,7 @@ import {v4 as uuid } from "uuid";
 import edit from '../img/edit.png'
 import link from '../img/link.png'
 import plus from '../img/plus.png'
+import down from '../img/downArrow.png'
 import user1 from '../img/Ellipse 12.png'
 import user2 from '../img/Ellipse 14.png'
 import user3 from '../img/Ellipse 13.png'
@@ -15,6 +16,14 @@ import share from '../img/profile-2user.png'
 import pause from '../img/pause.png'
 import menu from '../img/menu.png'
 import message from '../img/message.png'
+import files from '../img/files.png'
+import bg1 from '../img/bg1.png'
+import bg2 from '../img/bg2.png'
+import bg3 from '../img/bg3.png'
+import bg4 from '../img/bg4.png'
+
+
+
 
 
 
@@ -25,21 +34,69 @@ const itemsFromBackend = [
   { id: uuid(), badge: "Low",
     title: "Brainstorming",
     text: "Brainstorming brings team members' diverse experience into play.",
-    users: images,
+    user1: user1,
+    user2: user2,
+    user3: user3,
     comments: 12,
     files: 0},
-  { id: uuid(), badge: "High", },
-  { id: uuid(), badge: "High",  },
+
+  { id: uuid(), badge: "High",
+    title: "Research",
+    text: "User research helps you to create an optimal product for users.",
+    user1: user4,
+    user2: user2,
+    comments: 10,
+    files: 3},
+
+  { id: uuid(), badge: "High",
+    title: "Wireframes",
+    text: "Low fidelity wireframes include the most basic content and visuals.",
+    user1: user1,
+    user2: user2,
+    user3: user3,
+    comments: 17,
+    files: 2},
 ];
 
 const itemsFromProgress = [
-  { id: uuid(), badge: "Low" },
-  { id: uuid(), badge: "Low" },
+  { id: uuid(), badge: "Low",
+    background: bg1,
+    title:"Onboarding Illustrations",
+    user1: user1,
+    user2: user2,
+    user3: user3,
+    comments: 10,
+    style: {height: "80px"},
+    files: 3},
+
+  { id: uuid(), badge: "Low",
+    title: "Moodboard",
+    background: bg2,
+    background2: bg3,
+    user1: user4,
+    style: { margin:"4px", gap: 2},
+    comments: 17,
+    files: 2 },
 ];
 
 const itemsFromDone = [
-  { id: uuid(), badge: "Completed" },
-  { id: uuid(), badge: "Completed" },
+  { id: uuid(), badge: "Completed",
+    title: "Mobile App Design",
+    background: bg4,
+    style: {height: "100px", marginLeft: "60px"},
+    user1: user1,
+    user2: user2,
+    comments: 17,
+    files: 2 },
+  { id: uuid(), badge: "Completed",
+    title: "Design System",
+    text: "It just needs to adapt the UI from what you did before",
+    user1: user1,
+    user2: user2,
+    user3: user3,
+    comments: 17,
+    files: 2
+   },
 ];
 
 const columnsFromBackend = {
@@ -48,6 +105,7 @@ const columnsFromBackend = {
     circle: {backgroundColor: "#5030E5" },
     line: {background: "#800080", border: "3px solid #5030E5"},
     badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
+    add: plus,
     items: itemsFromBackend
   },
   [uuid()]: {
@@ -55,6 +113,7 @@ const columnsFromBackend = {
     circle: {backgroundColor: "#FFA500" },
     line: {background: "#FFA500", border: "3px solid #FFA500"},
     badge: {background: "rgba(223, 168, 116, 0.2)", color: "#D58D49"},
+    area: {height: "230px"},
     items: itemsFromProgress
   },
   [uuid()]: {
@@ -131,13 +190,15 @@ export default function Main() {
       </div>
 
       <button className='h-btns f-btn'>
-        <img src={filter} alt='filter' className='absolute left-6 bottom-2'/>
-        <p className='absolute left-12 bottom-2'>Filter</p>
+        <img src={filter} alt='filter' className='absolute left-5 bottom-2'/>
+        <p className='absolute left-10 bottom-2'>Filter</p>
+        <img src={down} alt='arrow' className='absolute left-24' />
       </button>
 
       <button className='h-btns t-btn'>
-        <img src={calender} alt='calender' className='absolute left-6 bottom-2'/>
-        <p className='absolute left-12 bottom-2'>Today</p>
+        <img src={calender} alt='calender' className='absolute left-5 bottom-2'/>
+        <p className='absolute left-10 bottom-2'>Today</p>
+        <img src={down} alt='arrow' className='absolute left-24' />
       </button>
 
       <button className='h-btns share-btn'>
@@ -148,7 +209,7 @@ export default function Main() {
       <div className='pause'>
         <img src={pause} alt='pause' className='absolute left-2 top-2 w-6 h-6'/>
       </div>
-      <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
+      <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8 menu'/>
 
       <div className='flex kanban'>
         <DragDropContext
@@ -177,7 +238,7 @@ export default function Main() {
                               ? "#F5F5F5"
                               :"#F5F5F5",
                               width: 330,
-                              height: "auto",
+                              height: 800,
                               borderRadius: "16px 16px 0px 0px",
                               padding: 4,
                               minHeight: 500
@@ -188,6 +249,7 @@ export default function Main() {
                             <tr>
                           <p className='m-2.5 m circles' style={column.circle}></p>
                             <td className='card-space-title'><h2>{column.name}</h2></td>
+                            <img src={column.add} className='absolute left-72 top-6 adds'/>
                             </tr>
                           </table>
                           <div className='card-line' style={column.line}></div>
@@ -206,28 +268,42 @@ export default function Main() {
                                       ref={provided.innerRef}
                                       {...provided.draggableProps}
                                       {...provided.dragHandleProps}
-                                      // style={{
-                                      //   userSelect: "none",
-                                      //   padding: 56,
-                                      //   margin: "0 0 8px 0",
-                                      //   minHeight: "50px",
-                                      //   backgroundColor: snapshot.isDragging
-                                      //     ? "black"
-                                      //     : "green",
-                                      //   color: "blue",
-                                      //   ...provided.draggableProps.style
-                                      // }}
-                                      className='cards'
+                                      style={{
+                                        userSelect: "none",
+                                        minHeight: "50px",
+                                        background: snapshot.isDragging
+                                          ? "#FFFFFF"
+                                          : "",
+                                          transform: snapshot.isDragging
+                                           ? "rotate(30deg)"
+                                           : "",
+                                        ...provided.draggableProps.style
+                                      }}
+                                      
+                                      className="cards"
                                     >
-                                      <p className='badge' style={column.badge}>{item.badge}</p>
-                                      <div>
-                                        <h2><strong>{item.title}</strong></h2>
-                                        <p>{item.text}</p>
-                                        <img src={user1}/>
-                                        <p>{item.comments}</p>
-                                        <p>{item.files}</p>
+                                      
+                                        <p className='badge' style={column.badge}>{item.badge}</p>
+                                        <div>
+                                          <h2 className='task-title'><strong>{item.title}</strong></h2>
+                                          <p className='task-text'>{item.text}</p>
+                                          <div className='flex'>
+                                            <img src={item.background} style={item.style}/>
+                                            <img src={item.background2} style={item.style}/>
+
+                                          </div>
+                                          
+                                          <div className='flex task-text mt-1'>
+                                            <img src={item.user1} className='border-0 h-8'/>
+                                            <img src={item.user2} className='border-0 h-8'/>
+                                            <img src={item.user3} className='border-0 h-8'/>
+
+                                            <p className='flex m-4 ml-28'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
+                                            <p className='flex m-4'><img src={files} className='w-5 h-5'/><p className='pl-1'>{item.files}</p></p>
+                                          </div>
+                                        </div>
                                       </div>
-                                    </div>
+                                  
                                   );
                                 }}
                               </Draggable>
