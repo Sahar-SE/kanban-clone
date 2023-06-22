@@ -211,7 +211,7 @@ export default function Main() {
                             <tr>
                           <p className='m-2.5 m circles' style={column.circle}></p>
                             <td className='card-space-title'><h2>{column.name}</h2></td>
-                            <img src={column.add} className='absolute left-72 top-6'/>
+                            <img src={column.add} className='absolute left-72 top-6 adds'/>
                             </tr>
                           </table>
                           <div className='card-line' style={column.line}></div>
