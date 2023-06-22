@@ -394,7 +394,7 @@
 
 .cards {
   width: 300px;
-  height: 210px;
+  height: 215px;
   background: #FFFFFF;
   border-radius: 16px;
   margin-top: 5%;
@@ -430,7 +430,7 @@
   font-size: 18px;
   font-family: Inter;
   font-weight: 600;
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 .task-text {

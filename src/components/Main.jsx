@@ -18,6 +18,11 @@ import menu from '../img/menu.png'
 import message from '../img/message.png'
 import files from '../img/files.png'
 import bg1 from '../img/bg1.png'
+import bg2 from '../img/bg2.png'
+import bg3 from '../img/bg3.png'
+import bg4 from '../img/bg4.png'
+
+
 
 
 
@@ -43,7 +48,6 @@ const itemsFromBackend = [
   { id: uuid(), badge: "High",
     title: "Wireframes",
     text: "Low fidelity wireframes include the most basic content and visuals.",
-    users: images,
     comments: 17,
     files: 2},
 ];
@@ -51,14 +55,33 @@ const itemsFromBackend = [
 const itemsFromProgress = [
   { id: uuid(), badge: "Low",
     background: bg1,
+    title:"Onboarding Illustrations",
     comments: 10,
+    style: {height: "80px"},
     files: 3},
-  { id: uuid(), badge: "Low" },
+
+  { id: uuid(), badge: "Low",
+    title: "Moodboard",
+    background: bg2,
+    background2: bg3,
+    style: { margin:"4px", gap: 2},
+    comments: 17,
+    files: 2 },
 ];
 
 const itemsFromDone = [
-  { id: uuid(), badge: "Completed" },
-  { id: uuid(), badge: "Completed" },
+  { id: uuid(), badge: "Completed",
+    title: "Mobile App Design",
+    background: bg4,
+    style: {height: "100px", marginLeft: "60px"},
+    comments: 17,
+    files: 2 },
+  { id: uuid(), badge: "Completed",
+    title: "Design System",
+    text: "It just needs to adapt the UI from what you did before",
+    comments: 17,
+    files: 2
+   },
 ];
 
 const columnsFromBackend = {
@@ -249,11 +272,16 @@ export default function Main() {
                                         <div>
                                           <h2 className='task-title'><strong>{item.title}</strong></h2>
                                           <p className='task-text'>{item.text}</p>
-                                          <img src={item.background}/>
+                                          <div className='flex'>
+                                            <img src={item.background} style={item.style}/>
+                                            <img src={item.background2} style={item.style}/>
+
+                                          </div>
+                                          
                                           <div className='flex task-text'>
                                             <img src={user1} className='m-3 w-8 h-8'/>
                                             <p className='flex m-4 ml-32'><img src={message}/><p className='pl-1'>{item.comments}</p></p>
-                                            <p className='flex m-4 w-12'><img src={files}/><p className='pl-1'>{item.files}</p></p>
+                                            <p className='flex m-4 '><img src={files} className='w-5 h-5'/><p className='pl-1'>{item.files}</p></p>
                                           </div>
                                         </div>
                                       </div>
