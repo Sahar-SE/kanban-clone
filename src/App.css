@@ -28,7 +28,7 @@
 }
 
 .nav-line {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 1px;
   border: 1px solid #DBDBDB;
@@ -440,157 +440,159 @@
 }
 
 /* Mobile Version */
-.title {
-  display: none;
-}
+@media (min-width: 280px) and (max-width: 900px) {
+  .title {
+    display: none;
+  }
 
-.side-line {
-  left: 80px;
-}
+  .side-line {
+    left: 80px;
+  }
 
-.search {
-  display: none;
-}
+  .search {
+    display: none;
+  }
 
-.zoom {
-  left: 100px;
-}
+  .zoom {
+    left: 100px;
+  }
 
-.navItems {
-  left: 145px;
-  top: 19px
-}
+  .navItems {
+    left: 145px;
+    top: 19px
+  }
 
-.user {
-  left: 275px;
-}
+  .user {
+    left: 275px;
+  }
 
-.location {
-  left: 325px;
-}
+  .location {
+    left: 325px;
+  }
 
-.user-img {
-  right: 40px;
-}
+  .user-img {
+    right: 40px;
+  }
 
-.victor {
-  right: 15px;
-}
+  .victor {
+    right: 15px;
+  }
 
-.sideItems {
-  display: none;
-}
+  .sideItems {
+    display: none;
+  }
 
-.side-hr-line {
-  display: none;
-}
+  .side-hr-line {
+    display: none;
+  }
 
-.myProjects {
-  display: none;
-}
+  .myProjects {
+    display: none;
+  }
 
-.add {
-  display: none;
-}
+  .add {
+    display: none;
+  }
 
-.lamp {
-  display: none;
-}
+  .lamp {
+    display: none;
+  }
 
-.lamp-bg {
-  display: none;
-}
+  .lamp-bg {
+    display: none;
+  }
 
-.project-items {
-  display: none;
-}
+  .project-items {
+    display: none;
+  }
 
-.side-card {
-  display: none;
-}
+  .side-card {
+    display: none;
+  }
 
-.lamp-img {
-  display: none;
-}
+  .lamp-img {
+    display: none;
+  }
 
-.victors {
-  left: 50px;
-}
+  .victors {
+    left: 50px;
+  }
 
-.header {
-  left: 100px;
-}
+  .header {
+    left: 100px;
+  }
 
-.rec-edit {
-  left: 380px;
-}
+  .rec-edit {
+    left: 380px;
+  }
 
-.rec-link {
-  left: 450px;
-}
+  .rec-link {
+    left: 450px;
+  }
 
-.plus {
-  top: 190px;
-}
+  .plus {
+    top: 190px;
+  }
 
-.invite {
-  top: 185px;
-}
+  .invite {
+    top: 185px;
+  }
 
-.user1 {
-  top: 180px;
-}
+  .user1 {
+    top: 180px;
+  }
 
-.user2 {
-  top: 180px;
-}
+  .user2 {
+    top: 180px;
+  }
 
-.user3 {
-  top: 180px;
-}
+  .user3 {
+    top: 180px;
+  }
 
-.user4 {
-  top: 180px;
-}
+  .user4 {
+    top: 180px;
+  }
 
-.more {
-  top: 180px;
-}
+  .more {
+    top: 180px;
+  }
 
-.f-btn {
-  left: 100px;
-  top: 240px;
-}
+  .f-btn {
+    left: 100px;
+    top: 240px;
+  }
 
-.t-btn {
-  left: 230px;
-  top: 240px;
-}
+  .t-btn {
+    left: 230px;
+    top: 240px;
+  }
 
-.share-btn {
-  left:360px;
-  top: 240px;
-}
+  .share-btn {
+    left:360px;
+    top: 240px;
+  }
 
-.pause {
-  top: 182px;
-  right: 17px;
-}
+  .pause {
+    top: 182px;
+    right: 17px;
+  }
 
-.menu {
-  left: 100px;
-  top: 183px;
-}
+  .menu {
+    left: 100px;
+    top: 183px;
+  }
 
-.kanban {
-  display: flex;
-  flex-direction: column;
-  left: 205px;
-  margin-top: 20px;
-}
+  .kanban {
+    display: flex;
+    flex-direction: column;
+    left: 205px;
+    margin-top: 20px;
+  }
 
-.adds{
-  position: inherit;
-  margin-left: 200px;
+  .adds{
+    position: inherit;
+    margin-left: 200px;
 
+  }
 }
