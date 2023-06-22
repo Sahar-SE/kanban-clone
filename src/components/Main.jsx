@@ -171,7 +171,7 @@ export default function Main() {
       <div className='pause'>
         <img src={pause} alt='pause' className='absolute left-2 top-2 w-6 h-6'/>
       </div>
-      <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8'/>
+      <img src={menu} alt='menu' className='absolute right-16 top-48 w-8 h-8 menu'/>
 
       <div className='flex kanban'>
         <DragDropContext

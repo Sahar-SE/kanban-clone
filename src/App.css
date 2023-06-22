@@ -439,7 +439,7 @@
   font-family: Inter;
 }
 
-
+/* Mobile Version */
 .title {
   display: none;
 }
@@ -575,4 +575,16 @@
 .pause {
   top: 182px;
   right: 17px;
+}
+
+.menu {
+  left: 100px;
+  top: 183px;
+}
+
+.kanban {
+  display: flex;
+  flex-direction: column;
+  left: 205px;
+  margin-top: 20px;
 }
