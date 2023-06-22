@@ -147,14 +147,15 @@ export default function Main() {
       </div>
 
       <button className='h-btns f-btn'>
-        <img src={filter} alt='filter' className='absolute left-6 bottom-2'/>
-        <p className='absolute left-12 bottom-2'>Filter</p>
+        <img src={filter} alt='filter' className='absolute left-5 bottom-2'/>
+        <p className='absolute left-10 bottom-2'>Filter</p>
         <img src={down} alt='arrow' className='absolute left-24' />
       </button>
 
       <button className='h-btns t-btn'>
-        <img src={calender} alt='calender' className='absolute left-6 bottom-2'/>
-        <p className='absolute left-12 bottom-2'>Today</p>
+        <img src={calender} alt='calender' className='absolute left-5 bottom-2'/>
+        <p className='absolute left-10 bottom-2'>Today</p>
+        <img src={down} alt='arrow' className='absolute left-24' />
       </button>
 
       <button className='h-btns share-btn'>
