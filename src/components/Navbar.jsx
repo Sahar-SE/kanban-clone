@@ -9,7 +9,7 @@ import victor from '../img/downArrow.png'
 
 export default function Navbar() {
   return (
-    <div className='flex'>
+    <div className='flex b'>
       <img src={logo} alt='logo' className='logo'/>
       <h1 className='title'>Project M.</h1>
       <img src={victors} alt='pointer'  className='victors'/> 
@@ -22,7 +22,6 @@ export default function Navbar() {
       <h2 className='location'>U.P, India</h2>
       <img src={userImg} alt='user' className='user-img'/>
       <img src={victor} alt='victor' className='victor'/>
-
     </div>
   )
 }

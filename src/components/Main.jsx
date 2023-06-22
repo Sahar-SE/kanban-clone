@@ -23,13 +23,6 @@ import bg3 from '../img/bg3.png'
 import bg4 from '../img/bg4.png'
 
 
-
-
-
-
-const images = [
-  <img source={user1} />,<img source={user2} />,<img source={user3} />
-];
 const itemsFromBackend = [
   { id: uuid(), badge: "Low",
     title: "Brainstorming",
